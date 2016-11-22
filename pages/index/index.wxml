@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{list}}" class="message-list" wx:key="unique">
+    <view class="list-left fl">
+       <image src="{{item.icon}}"></image>
+    </view>
+    <view class="list-right">
+      <view class="list-title">{{item.bankname}}-{{item.name}}</view>
+      <view class="list-content">
+        <text class="list-rate">{{item.loanvalue}}{{item.loanlife}}</text>
+        <text class="list-rate1">利息{{item.rate}}</text>
+      </view>
+      <view class="list-content">
+        <view class="list-tag">
+          <text class="list-tag-1">{{item.tags[0]}}</text>
+          <text class="list-tag-2">{{item.tags[0]}}</text>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</view>
